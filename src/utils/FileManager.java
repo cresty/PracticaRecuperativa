@@ -18,10 +18,10 @@ public class FileManager {
 	
 /**
  * Este metodo toma dos archivos, uno de entrada con texto plano, y uno de salida, al que se le
- * añadira el contenido del archivo de entrada
+ * anadira el contenido del archivo de entrada
  * @param f Archivo de entrada
  * @param s Archivo de salida
- * @return Archivo con el texto de entrada añadido.
+ * @return Archivo con el texto de entrada anadido.
  * @throws IOException
  */
 	
