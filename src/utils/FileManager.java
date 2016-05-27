@@ -37,7 +37,7 @@ public class FileManager {
 	        fw.write(" ");
 	    }
 	    fw.close();
-
+	    sc.close();
 	    return s;
 	}
 	
@@ -70,6 +70,7 @@ public class FileManager {
     	{
     		str = str + sc.next() + " ";
     	}
+    	sc.close();
     	return str;
     }
 

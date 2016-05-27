@@ -23,12 +23,12 @@ public class Tokenizador {
 	 * Este metodo inicializa el model de los token que sera utilizado para la
 	 * tokenizacion aprendida, es un requerimiento de la API OpenNLP
 	 * @return Modelo del Tokenizador TokenizerModel
-	 * @throws FileNotFoundException
+	 * @throws IOException 
 	 */ 
-	public TokenizerModel initTokenizer() throws FileNotFoundException{
+	public TokenizerModel initTokenizer() throws IOException{
 		TokenizerModel model = null;
 		InputStream modelIn = new FileInputStream("en-token.bin"); ///< Recibe un parametro basico para realizar el modelo.
-
+		modelIn.close();
 		try {
 		  model = new TokenizerModel(modelIn);
 		}
@@ -37,14 +37,14 @@ public class Tokenizador {
 		}
 		
 		finally {
-		  if (modelIn != null) {
+		 
 		    try {
 		      modelIn.close();
 		    }
 		    catch (IOException e) {
 		    }
 		  }
-		}
+		
 		return model;
 	}
 	
