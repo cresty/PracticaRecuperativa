@@ -3,7 +3,7 @@ package tests;
 
 import java.io.IOException;
 
-//import junit.Test;
+import org.junit.Test;
 
 import opennlp.tools.tokenize.TokenizerModel;
 import utils.Tokenizador;
@@ -15,7 +15,7 @@ import utils.Tokenizador;
  */
 
 public class TokenizadorTest {
-	@org.junit.Test
+	@Test
 	public void TokenTest() throws IOException {
 		Tokenizador t = new Tokenizador();
 		TokenizerModel tm = t.initTokenizer(); ///< Inicializamos el model del tokenizador

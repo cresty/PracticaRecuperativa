@@ -3,7 +3,7 @@ package tests;
 import java.io.File;
 import java.io.IOException;
 
-//import junit.Test;
+import org.junit.Test;
 
 import utils.FileManager;
 
@@ -19,7 +19,7 @@ public class FileManagerTest {
 	 * Probamos las distintas funciones y metodos
 	 * @throws IOException
 	 */
-  @org.junit.Test
+  @Test
   public void fileTest() throws IOException {
     
 	  File file1 = new File("archivo1.txt"); ///< Generacion de un archivo de texto plano
