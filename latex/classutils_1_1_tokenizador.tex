@@ -1,0 +1,65 @@
+\hypertarget{classutils_1_1_tokenizador}{}\section{utils.\+Tokenizador Class Reference}
+\label{classutils_1_1_tokenizador}\index{utils.\+Tokenizador@{utils.\+Tokenizador}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tokenizer\+Model \hyperlink{classutils_1_1_tokenizador_ade3ce0234a4ad2d81c9ca2bd7cda1dcb}{init\+Tokenizer} ()  throws File\+Not\+Found\+Exception
+\item 
+void \hyperlink{classutils_1_1_tokenizador_a682736485b03e16ead967b2c1566ac30}{Tokenizar} (Tokenizer\+Model model)  throws I\+O\+Exception 	
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que contiene toda la funcionalidad extraida de la A\+PI de Open\+N\+LP para la tokenizacion \begin{DoxyAuthor}{Author}
+Antonio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{utils\+::\+Tokenizador@{utils\+::\+Tokenizador}!init\+Tokenizer@{init\+Tokenizer}}
+\index{init\+Tokenizer@{init\+Tokenizer}!utils\+::\+Tokenizador@{utils\+::\+Tokenizador}}
+\subsubsection[{\texorpdfstring{init\+Tokenizer()}{initTokenizer()}}]{\setlength{\rightskip}{0pt plus 5cm}Tokenizer\+Model utils.\+Tokenizador.\+init\+Tokenizer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) throws File\+Not\+Found\+Exception}\hypertarget{classutils_1_1_tokenizador_ade3ce0234a4ad2d81c9ca2bd7cda1dcb}{}\label{classutils_1_1_tokenizador_ade3ce0234a4ad2d81c9ca2bd7cda1dcb}
+Este metodo inicializa el model de los token que sera utilizado para la tokenizacion aprendida, es un requerimiento de la A\+PI Open\+N\+LP \begin{DoxyReturn}{Returns}
+Modelo del \hyperlink{classutils_1_1_tokenizador}{Tokenizador} Tokenizer\+Model 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+$<$ Recibe un parametro basico para realizar el modelo. \index{utils\+::\+Tokenizador@{utils\+::\+Tokenizador}!Tokenizar@{Tokenizar}}
+\index{Tokenizar@{Tokenizar}!utils\+::\+Tokenizador@{utils\+::\+Tokenizador}}
+\subsubsection[{\texorpdfstring{Tokenizar(\+Tokenizer\+Model model)}{Tokenizar(TokenizerModel model)}}]{\setlength{\rightskip}{0pt plus 5cm}void utils.\+Tokenizador.\+Tokenizar (
+\begin{DoxyParamCaption}
+\item[{Tokenizer\+Model}]{model}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception}\hypertarget{classutils_1_1_tokenizador_a682736485b03e16ead967b2c1566ac30}{}\label{classutils_1_1_tokenizador_a682736485b03e16ead967b2c1566ac30}
+Metodo que recibe el model del tokenizador y utilizando el fichero completo de entrada, genera un fichero nuevo completamente tokenizado. 
+\begin{DoxyParams}{Parameters}
+{\em model} & Modelo del tokenizador \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+$<$ Declaracion del tokenizador
+
+$<$ Variable \hyperlink{classutils_1_1_file_manager}{File\+Manager} para la manipulacion de archivos
+
+$<$ Archivo a tokenizar
+
+$<$ Archivo tokenizado
+
+$<$ String donde almacenamos el archivo a tokenizar
+
+$<$ Array de tokens 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{_tokenizador_8java}{Tokenizador.\+java}\end{DoxyCompactItemize}

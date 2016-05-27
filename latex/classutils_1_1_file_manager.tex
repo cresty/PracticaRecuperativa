@@ -1,0 +1,89 @@
+\hypertarget{classutils_1_1_file_manager}{}\section{utils.\+File\+Manager Class Reference}
+\label{classutils_1_1_file_manager}\index{utils.\+File\+Manager@{utils.\+File\+Manager}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+File \hyperlink{classutils_1_1_file_manager_a18c74cff0dd3c88bcc213021791c6edb}{append} (File f, File s)  throws I\+O\+Exception 	
+\item 
+void \hyperlink{classutils_1_1_file_manager_ab698bb662e2c6631dab48001468d65d0}{formatear} (File f)  throws File\+Not\+Found\+Exception 	
+\item 
+String \hyperlink{classutils_1_1_file_manager_a846dd4a5779e9829a6fb61c69d2895d4}{file\+To\+String} (File f)  throws File\+Not\+Found\+Exception     
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase para la carga de los ficheros Contiene todo lo necesario en el manejo de ficheros para su posterior tokenizacion. \begin{DoxyAuthor}{Author}
+Antonio 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\index{utils\+::\+File\+Manager@{utils\+::\+File\+Manager}!append@{append}}
+\index{append@{append}!utils\+::\+File\+Manager@{utils\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{append(\+File f, File s)}{append(File f, File s)}}]{\setlength{\rightskip}{0pt plus 5cm}File utils.\+File\+Manager.\+append (
+\begin{DoxyParamCaption}
+\item[{File}]{f, }
+\item[{File}]{s}
+\end{DoxyParamCaption}
+) throws I\+O\+Exception}\hypertarget{classutils_1_1_file_manager_a18c74cff0dd3c88bcc213021791c6edb}{}\label{classutils_1_1_file_manager_a18c74cff0dd3c88bcc213021791c6edb}
+Este metodo toma dos archivos, uno de entrada con texto plano, y uno de salida, al que se le añadira el contenido del archivo de entrada 
+\begin{DoxyParams}{Parameters}
+{\em f} & Archivo de entrada \\
+\hline
+{\em s} & Archivo de salida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Archivo con el texto de entrada añadido. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+$<$ Variable File\+Writter para utilizar las funcionalidades de la libreria File\+Writter
+
+$<$ String donde almacenamos el texto del archivo entrante para aadirlo al archivo de salida
+
+$<$ Variable scanner para funcionalidades de archivos \index{utils\+::\+File\+Manager@{utils\+::\+File\+Manager}!file\+To\+String@{file\+To\+String}}
+\index{file\+To\+String@{file\+To\+String}!utils\+::\+File\+Manager@{utils\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{file\+To\+String(\+File f)}{fileToString(File f)}}]{\setlength{\rightskip}{0pt plus 5cm}String utils.\+File\+Manager.\+file\+To\+String (
+\begin{DoxyParamCaption}
+\item[{File}]{f}
+\end{DoxyParamCaption}
+) throws File\+Not\+Found\+Exception}\hypertarget{classutils_1_1_file_manager_a846dd4a5779e9829a6fb61c69d2895d4}{}\label{classutils_1_1_file_manager_a846dd4a5779e9829a6fb61c69d2895d4}
+Pasamos un archivo y nos devuelve un string 
+\begin{DoxyParams}{Parameters}
+{\em f} & Archivo de entrada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String con el contenido del archivo 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\index{utils\+::\+File\+Manager@{utils\+::\+File\+Manager}!formatear@{formatear}}
+\index{formatear@{formatear}!utils\+::\+File\+Manager@{utils\+::\+File\+Manager}}
+\subsubsection[{\texorpdfstring{formatear(\+File f)}{formatear(File f)}}]{\setlength{\rightskip}{0pt plus 5cm}void utils.\+File\+Manager.\+formatear (
+\begin{DoxyParamCaption}
+\item[{File}]{f}
+\end{DoxyParamCaption}
+) throws File\+Not\+Found\+Exception}\hypertarget{classutils_1_1_file_manager_ab698bb662e2c6631dab48001468d65d0}{}\label{classutils_1_1_file_manager_ab698bb662e2c6631dab48001468d65d0}
+Le pasamos un archivo y lo formatea, dejandolo sin ningun contenido. 
+\begin{DoxyParams}{Parameters}
+{\em f} & Archivo de entrada \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em File\+Not\+Found\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/utils/\hyperlink{_file_manager_8java}{File\+Manager.\+java}\end{DoxyCompactItemize}
