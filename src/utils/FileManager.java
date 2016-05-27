@@ -1,24 +1,15 @@
 package utils;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.DataInputStream;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Locale;
 import java.util.Scanner;
 
 /**
  * Clase para la carga de los ficheros
- * Contiene todo lo necesario en el manejo de ficheros apra su posterior tokenizacion
+ * Contiene todo lo necesario en el manejo de ficheros para su posterior tokenizacion.
  * @author Antonio
  *
  */
@@ -30,16 +21,16 @@ public class FileManager {
  * añadira el contenido del archivo de entrada
  * @param f Archivo de entrada
  * @param s Archivo de salida
- * @return
+ * @return Archivo con el texto de entrada añadido.
  * @throws IOException
  */
 	
 	public File append(File f, File s) throws IOException
 	{
-	    FileWriter fw = new FileWriter(s,true);
-	    String arr;
-	    Scanner sc=new Scanner(f);
-	    while(sc.hasNext())
+	    FileWriter fw = new FileWriter(s,true);///< Variable FileWritter para utilizar las funcionalidades de la libreria FileWritter 
+	    String arr; ///< String donde almacenamos el texto del archivo entrante para aadirlo al archivo de salida 
+	    Scanner sc=new Scanner(f); ///< Variable scanner para funcionalidades de archivos 
+	    while(sc.hasNext()) 
 	    {
 	        arr=(sc.next());
 	        fw.write(arr);
@@ -52,7 +43,7 @@ public class FileManager {
 	
 	/**
 	 * Le pasamos un archivo y lo formatea, dejandolo sin ningun contenido.
-	 * @param f
+	 * @param f Archivo de entrada
 	 * @throws FileNotFoundException
 	 */
 	
@@ -63,6 +54,13 @@ public class FileManager {
 		writer.close();
 		
 	}
+	
+	/**
+	 * Pasamos un archivo y nos devuelve un string
+	 * @param f Archivo de entrada
+	 * @return String con el contenido del archivo
+	 * @throws FileNotFoundException
+	 */
             
     public String fileToString(File f) throws FileNotFoundException
     {
