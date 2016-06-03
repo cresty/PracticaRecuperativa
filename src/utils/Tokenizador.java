@@ -28,23 +28,23 @@ public class Tokenizador {
 	public TokenizerModel initTokenizer() throws IOException{
 		TokenizerModel model = null;
 		InputStream modelIn = new FileInputStream("en-token.bin"); ///< Recibe un parametro basico para realizar el modelo.
-		modelIn.close();
+		//modelIn.close();
 		try {
-		  model = new TokenizerModel(modelIn);
+		 model = new TokenizerModel(modelIn);
 		}
 		catch (IOException e) {
 		  e.printStackTrace();
 		}
 		
 		finally {
-		 
+			 if (modelIn != null) {
 		    try {
 		      modelIn.close();
 		    }
 		    catch (IOException e) {
 		    }
 		  }
-		
+		}
 		return model;
 	}
 	
@@ -60,8 +60,8 @@ public class Tokenizador {
 		Tokenizer tokenizer = new TokenizerME(model); ///< Declaracion del tokenizador
 		FileManager fm = new FileManager(); ///< Variable FileManager para la manipulacion de archivos
 		
-		File token = new File("tokenizado.txt"); ///< Archivo a tokenizar
-		File entrada = new File("salida.txt"); ///< Archivo tokenizado
+		File token = new File("Tokenizado.txt"); ///< Archivo a tokenizar
+		File entrada = new File("Concatenado.txt"); ///< Archivo tokenizado
 		String str = ""; ///< String donde almacenamos el archivo a tokenizar
 		str = fm.fileToString(entrada); 
 		String tokens[] = tokenizer.tokenize(str); ///< Array de tokens

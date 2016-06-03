@@ -21,11 +21,12 @@ public class FileManager {
  * anadira el contenido del archivo de entrada
  * @param f Archivo de entrada
  * @param s Archivo de salida
+ * @param e Blooeano que marca si el archivo es el ultimo archivo que se va a concatenar para solucionar problemas de espaciados
  * @return Archivo con el texto de entrada anadido.
  * @throws IOException
  */
 	
-	public File append(File f, File s) throws IOException
+	public File append(File f, File s, Boolean e) throws IOException
 	{
 	    FileWriter fw = new FileWriter(s,true);///< Variable FileWritter para utilizar las funcionalidades de la libreria FileWritter 
 	    String arr; ///< String donde almacenamos el texto del archivo entrante para aadirlo al archivo de salida 
@@ -34,8 +35,11 @@ public class FileManager {
 	    {
 	        arr=(sc.next());
 	        fw.write(arr);
-	        fw.write(" ");
+	        if (sc.hasNext())
+	        	fw.write(" ");
 	    }
+	    if (!e)
+	    	fw.write(" ");
 	    fw.close();
 	    sc.close();
 	    return s;
@@ -68,7 +72,9 @@ public class FileManager {
     	Scanner sc = new Scanner(f);
     	while (sc.hasNext())
     	{
-    		str = str + sc.next() + " ";
+    		str = str + sc.next();
+    		if (sc.hasNext())
+    			str = str + " ";
     	}
     	sc.close();
     	return str;
