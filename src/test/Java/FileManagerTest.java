@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import java.util.concurrent.CompletableFuture;
 import utils.FileManager;
 
 /**
