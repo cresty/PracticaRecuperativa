@@ -7,10 +7,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
-import java.util.concurrent.CompletableFuture;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
-import  java.util.OptionalLong;
+//import java.util.concurrent.CompletableFuture;
+//import java.util.OptionalDouble;
+//import java.util.OptionalInt;
+//import  java.util.OptionalLong;
 import utils.FileManager;
 
 /**
@@ -40,7 +40,7 @@ public class FileManagerTest {
 		 FileWriter fileWriter = new FileWriter(expected); 
 		 fileWriter.write("My name is"); ///< Escribimos la cadena de caracter que esperamos que tenga el archivo de entrada de prueba
 		 fileWriter.close();
-		 assertThat(file1).hasContentEqualTo(expected); ///< Comprobamos que el archivo de entrada sea igual al archivo que acabamos de crear
+		 assertThat(file1).hasSameContentAs(expected); ///< Comprobamos que el archivo de entrada sea igual al archivo que acabamos de crear
 		 
 	 }
 	 
@@ -58,7 +58,7 @@ public class FileManagerTest {
 		 FileWriter fileWriter = new FileWriter(expected); 
 		 fileWriter.write("Antonio Vicente Suarez Spinosi"); ///< Escribimos la cadena de caracter que esperamos que tenga el archivo de entrada de prueba
 		 fileWriter.close();
-		 assertThat(file2).hasContentEqualTo(expected); ///< Comprobamos que el archivo de entrada sea igual al archivo que acabamos de crear
+		 assertThat(file2).hasSameContentAs(expected); ///< Comprobamos que el archivo de entrada sea igual al archivo que acabamos de crear
 		 
 	 }
 	 
@@ -84,7 +84,7 @@ public class FileManagerTest {
 		 FileWriter fileWriter = new FileWriter(expected); 
 		 fileWriter.write("My name is Antonio Vicente Suarez Spinosi"); ///< Escribimos la cadena de caracter que esperamos que tenga el archivo de entrada de prueba
 		 fileWriter.close();
-		 assertThat(salida).hasContentEqualTo(expected); ///< Comprobamos que el archivo de salida sea igual al archivo que acabamos de crear
+		 assertThat(salida).hasSameContentAs(expected); ///< Comprobamos que el archivo de salida sea igual al archivo que acabamos de crear
 		 
 	 }
 	
