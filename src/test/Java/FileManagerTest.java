@@ -26,7 +26,8 @@ public class FileManagerTest {
 	 * Metodo Test para comprobar que un archivo se genera correctamente
 	 * @throws IOException
 	 */
-	 @Test
+	 @SuppressWarnings("deprecation")
+	@Test
 	 public void file1Test() throws IOException{
 		
 		 File expected = new File("Expected1.txt"); ///< Archivo que contiene el texto esperado
@@ -43,7 +44,8 @@ public class FileManagerTest {
 	  * @throws IOException
 	  */
 	 
-	 @Test
+	 @SuppressWarnings("deprecation")
+	@Test
 	 public void file2Test() throws IOException{
 		
 		 File expected = new File("Expected2.txt"); ///< Archivo que contiene el texto esperado
@@ -60,7 +62,8 @@ public class FileManagerTest {
 	  * @throws IOException
 	  */
 	 
-	 @Test
+	 @SuppressWarnings("deprecation")
+	@Test
 	 public void fileAppendTest() throws IOException{
 		
 		 File file1 = new File("Entrada1.txt"); ///< Archivo de entrada de prueba

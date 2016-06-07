@@ -24,6 +24,7 @@ public class TokenizadorTest {
 	 * Metodo test para probar la funcionalidad del metodo Tokenizer de la API de OpenNLP
 	 * @throws IOException
 	 */
+	@SuppressWarnings("deprecation")
 	@Test
 	public void TokenTest() throws IOException {
 		File expected = new File("ExpectedToken.txt");
