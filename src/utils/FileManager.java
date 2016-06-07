@@ -26,7 +26,7 @@ public class FileManager {
  * @throws IOException
  */
 	
-	public File append(File f, File s, Boolean e) throws IOException
+	public void append(File f, File s, Boolean e) throws IOException
 	{
 	    FileWriter fw = new FileWriter(s,true);///< Variable FileWritter para utilizar las funcionalidades de la libreria FileWritter 
 	    String arr; ///< String donde almacenamos el texto del archivo entrante para aadirlo al archivo de salida 
@@ -38,11 +38,10 @@ public class FileManager {
 	        if (sc.hasNext())
 	        	fw.write(" ");
 	    }
-	    if (!e)
+	    if (e)
 	    	fw.write(" ");
 	    fw.close();
 	    sc.close();
-	    return s;
 	}
 	
 	/**

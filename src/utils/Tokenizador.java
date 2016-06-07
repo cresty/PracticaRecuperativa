@@ -2,7 +2,6 @@ package utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
@@ -55,19 +54,15 @@ public class Tokenizador {
 	 * @throws IOException
 	 */
 	
-	public void Tokenizar(TokenizerModel model) throws IOException
+	public void Tokenizar(TokenizerModel model, File entrada, File token) throws IOException
 	{
 		Tokenizer tokenizer = new TokenizerME(model); ///< Declaracion del tokenizador
 		FileManager fm = new FileManager(); ///< Variable FileManager para la manipulacion de archivos
-		
-		File token = new File("Tokenizado.txt"); ///< Archivo a tokenizar
-		File entrada = new File("Concatenado.txt"); ///< Archivo tokenizado
 		String str = ""; ///< String donde almacenamos el archivo a tokenizar
 		str = fm.fileToString(entrada); 
 		String tokens[] = tokenizer.tokenize(str); ///< Array de tokens
 		
 		FileWriter fw = new FileWriter(token);
-	    String arr;
 	    for (int i=0; i<tokens.length; i++) 
 	    {		
 	    	fw.write(tokens[i]);
@@ -75,6 +70,7 @@ public class Tokenizador {
 	    }
 	    fw.close();
 	}
+
 	
 
 }

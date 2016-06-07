@@ -71,8 +71,8 @@ public class FileManagerTest {
 		 FileManager fm = new FileManager();
 		 fm.formatear(salida);  ///< Limpia el archivo 'salida'
 		  
-		 fm.append(file1, salida, false); ///< Concatena el contenido del archivo1 al archivo salida
-		 fm.append(file2, salida, true); ///< Concatena el contenido del archivo2 al archivo salida
+		 fm.append(file1, salida, true); ///< Concatena el contenido del archivo1 al archivo salida
+		 fm.append(file2, salida, false); ///< Concatena el contenido del archivo2 al archivo salida
 		 FileWriter fileWriter = new FileWriter(expected); 
 		 fileWriter.write("My name is Antonio Vicente Suarez Spinosi"); ///< Escribimos la cadena de caracter que esperamos que tenga el archivo de entrada de prueba
 		 fileWriter.close();
