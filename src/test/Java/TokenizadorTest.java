@@ -8,6 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.concurrent.CompletableFuture;
 import java.util.Optional;
+import java.util.OptionalDouble;
 import org.junit.Test;
 import opennlp.tools.tokenize.TokenizerModel;
 import utils.Tokenizador;
