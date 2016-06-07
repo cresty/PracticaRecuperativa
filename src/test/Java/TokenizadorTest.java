@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
+import java.util.concurrent.CompletableFuture;
 import org.junit.Test;
 import opennlp.tools.tokenize.TokenizerModel;
 import utils.Tokenizador;
@@ -38,8 +38,7 @@ public class TokenizadorTest {
 		Tokenizador t = new Tokenizador();
 		TokenizerModel tm = t.initTokenizer(); ///< Inicializamos el model del tokenizador
 		t.Tokenizar(tm, entrada, token); ///< Realizamos el proceso de tokenizacion
-		//assertThat(token).hasContentEqualTo(expected); ///< Comprobamos que el archivo tokenizado sea igual al archivo que acabamos de crear
-		assertThat(token).hasSameContentAs(expected);
+		assertThat(token).hasSameContentAs(expected); ///< Comprobamos que el archivo tokenizado sea igual al archivo que acabamos de crear
 	}
 	
 
