@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 import org.junit.Test;
-
+import java.util.Optional;
 import opennlp.tools.tokenize.TokenizerModel;
 import utils.Tokenizador;
 
