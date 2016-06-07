@@ -18,6 +18,7 @@ import utils.Tokenizador;
  *
  */
 
+@SuppressWarnings("unused")
 public class TokenizadorTest {
 	
 	/**
