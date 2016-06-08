@@ -7,9 +7,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
-import java.util.OptionalInt;
-import java.util.OptionalLong;
-import java.time.ZonedDateTime;
 import utils.FileManager;
 
 /**
