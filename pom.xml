@@ -11,7 +11,7 @@
           <version>2.19.1</version>
           <configuration>
                 <testSourceDirectory>${basedir}\src\test\java\</testSourceDirectory>
-                <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory>
+                <testClassesDirectory>${project.build.directory}/test-classes/</testClassesDirectory>
             </configuration>
         </plugin>
       <plugin>
