@@ -8,9 +8,9 @@ import opennlp.tools.tokenize.TokenizerModel;
 import utils.FileManager;
 import utils.Tokenizador;
 
-public class main {
+public class Token {
 	
-	public static void main(String [] args) throws IOException
+	public static void main (String [] args) throws IOException
 	{
 		Boolean end = true, repeat = true;
 		File concat = new File("Concat.txt");
